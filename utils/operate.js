@@ -1,7 +1,7 @@
-import { add } from "./operations/add";
-import { divide } from "./operations/divide";
-import { multiply } from "./operations/multiply";
-import { substract } from "./operations/substract";
+import { add } from "./operations/add.js";
+import { divide } from "./operations/divide.js";
+import { multiply } from "./operations/multiply.js";
+import { substract } from "./operations/substract.js";
 
 export function operate(state) {
   switch (state.operator) {
