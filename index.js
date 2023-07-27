@@ -1,5 +1,5 @@
 export const operators = ["÷", "×", "-", "+"];
-import { buttons } from "./components/buttons.js";
+import { mainButtons } from "./components/mainButtons/main-buttons.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const state = {
@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     operator: "",
   };
 
-  buttons();
+  mainButtons();
 });
 
 

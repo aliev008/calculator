@@ -1,7 +1,7 @@
-import { btnClickHandler } from "../utils/btnClickHandler.js";
-import { buttonsArray } from "../index.js";
+import { btnClickHandler } from "../../utils/btnClickHandler.js";
+import { buttonsArray } from "../../index.js";
 
-export function buttons() {
+export function mainButtons() {
   const container = document.getElementById("main-buttons");
   buttonsArray.forEach((button) => {
     const btnElem = document.createElement("button");

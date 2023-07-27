@@ -1,4 +1,4 @@
-import { buttons } from "../components/buttons.js";
+import { buttons } from "../components/mainButtons/main-buttons.js";
 import { operate } from "./operate.js";
 
 export function btnClickHandler({ target }, state) {
