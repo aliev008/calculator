@@ -11,10 +11,10 @@ export function operate(state) {
     case "-":
       state.resultOfOperation = substract(firstNumber, secondNumber);
       break;
-    case "*":
+    case "×":
       state.resultOfOperation = multiply(firstNumber, secondNumber);
       break;
-    case "/":
+    case "÷":
       state.resultOfOperation = divide(firstNumber, secondNumber);
       break;
   }

@@ -1,9 +1,10 @@
-import { buttons } from "../components/mainButtons/main-buttons.js";
 import { operate } from "./operate.js";
+
+const operators = ["+","-","÷","×",]
 
 export function btnClickHandler({ target }, state) {
   const value = target.innerText;
-  const isOperator = buttons.some((button) => button === value);
+  const isOperator = operators.some((button) => button === value);
   const isDecimal = value === "." ? true : false;
   const isEqualSign = "=" ? true : false;
 

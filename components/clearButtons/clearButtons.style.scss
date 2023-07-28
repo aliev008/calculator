@@ -2,9 +2,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top:  10px;
+    margin: 20px 0;
 }
 
 .large-btn {
-    width: 45%;
+    width: 49%;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#reset-buttons :first-child {
+    background-color: #faa;
+}
+
+#reset-buttons :last-child {
+    background-color: #aaf;
 }

@@ -1,5 +1,23 @@
 import { btnClickHandler } from "../../utils/btnClickHandler.js";
-import { buttonsArray } from "../../index.js";
+
+const buttonsArray = [
+  "7",
+  "8",
+  "9",
+  "÷",
+  "4",
+  "5",
+  "6",
+  "×",
+  "1",
+  "2",
+  "3",
+  "-",
+  ".",
+  "0",
+  "=",
+  "+",
+];
 
 export function mainButtons() {
   const container = document.getElementById("main-buttons");
