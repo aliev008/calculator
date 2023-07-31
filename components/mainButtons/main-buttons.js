@@ -1,6 +1,6 @@
 import { btnClickHandler } from "../../utils/btnClickHandler.js";
 
-const buttonsArray = [
+export const buttonsArray = [
   "7",
   "8",
   "9",
@@ -19,7 +19,7 @@ const buttonsArray = [
   "+",
 ];
 
-export function mainButtons() {
+export function mainButtons(state) {
   const container = document.getElementById("main-buttons");
   buttonsArray.forEach((button) => {
     const btnElem = document.createElement("button");

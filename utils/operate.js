@@ -6,16 +6,23 @@ import { substract } from "./operations/substract.js";
 export function operate(state) {
   switch (state.operator) {
     case "+":
-      state.resultOfOperation = add(firstNumber, secondNumber);
+      state.resultOfOperation = add(state.firstOperand, state.secondOperand);
       break;
     case "-":
-      state.resultOfOperation = substract(firstNumber, secondNumber);
+      state.resultOfOperation = substract(
+        state.firstOperand,
+        state.secondOperand
+      );
       break;
     case "×":
-      state.resultOfOperation = multiply(firstNumber, secondNumber);
+      state.resultOfOperation = multiply(
+        state.firstOperand,
+        state.secondOperand
+      );
       break;
     case "÷":
-      state.resultOfOperation = divide(firstNumber, secondNumber);
+      state.resultOfOperation = divide(state.firstOperand, state.secondOperand);
       break;
   }
+  state.currentOperandToShow = state.resultOfOperation;
 }
